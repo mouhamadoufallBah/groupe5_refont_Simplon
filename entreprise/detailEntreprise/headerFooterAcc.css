@@ -302,7 +302,7 @@
   }
 
   footer {
-    height: 55vh;
+    height: 90vh;
     width: 100%;
     /* border: 2px solid; */
     background-color: var(--black);
@@ -325,6 +325,7 @@
     height: 80%;
     display: flex;
     justify-content: space-between;
+
   }
   
   footer .footerTopItem1First {
@@ -521,7 +522,7 @@
   
   footer .footerTop .footerTopItems .footerTopItem2 .footerTopItem2Info {
     /* border: 1px solid ; */
-    height: 70%;
+    height: 80%;
     width: 100%;
   }
   
@@ -538,6 +539,7 @@
     /* border: 1px solid; */
     display: flex;
     align-items: center;
+    gap: 5vh;
   }
   
   footer .footerTop .footerTopItems .footerTopItem2 .footerTopItem2Info ul li a {
@@ -571,7 +573,7 @@
 
   
 /* **************************mediaQueries header*********************** */
-@media Screen and (max-width: 900px) {
+@media Screen and (max-width: 1200px) {
     header {
       height: 25vh;
       width: 100%;
@@ -741,7 +743,7 @@
     footer .footerTop .footerTopItems {
       display: flex;
       flex-direction: column;
-      gap: 10%;
+      gap: 15%;
     }
   
     footer .footerTop .footerTopItems .footerTopItem1 {
@@ -762,7 +764,196 @@
       height: 100%;
     }
   }
-@media Screen and (max-width: 700px) {
+/* **************************mediaQueries header*********************** */
+@media Screen and (max-width: 900px) {
+    header {
+      height: 25vh;
+      width: 100%;
+      /* border: 2px solid red; */
+    }
+  
+    .headerContainer {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .info-container-black {
+      background-color: var(--black);
+      width: 100%;
+      height: 50%;
+    }
+  
+    .info-container {
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      flex-direction: column;
+      width: 98%;
+      height: 100%;
+      color: var(--white);
+      /* margin: 0 auto; */
+    }
+  
+    .participation {
+      font-size: 0.9em;
+      /* border: 1px solid #ccc; */
+      width: 100%;
+    }
+  
+    .participation span {
+      margin-left: 15px;
+    }
+  
+    .info-container .address {
+      /* border: 1px solid #ccc; */
+      width: 100%;
+      display: flex;
+      justify-content: start;
+    }
+  
+    .address p {
+      color: var(--white);
+    }
+  
+    .address p a {
+      color: var(--white);
+      margin-left: 8px;
+    }
+  
+    .navMiddle-bg {
+      background-color: var(--grey);
+      width: 100%;
+      height: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+    }
+  
+    .navMiddleContainer {
+      /* border: 2px solid; */
+      width: 98%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .navMiddleContainer .logo {
+      width: 20%;
+      height: 30%;
+    }
+  
+    .navMiddleContainer .logo img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    .navMiddleContainer .search {
+      /* border: 1px solid; */
+      height: 40%;
+      width: 30%;
+    }
+  
+    .menuTogler {
+      display: block;
+      cursor: pointer;
+    }
+  
+    .navMiddleContainer .search input {
+      height: 100%;
+      width: 85%;
+      border: none;
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+    } 
+    .navMiddleContainer .rightNavitem {
+      /* border: 1px solid red; */
+      width: 25%;
+      display: flex;
+      align-items: center;
+      display: none;
+      /* justify-content: center; */
+    }
+  
+    .navMiddleContainer .rightNavitem ul {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+  
+    .navMiddleContainer .rightNavitem ul li a {
+      color: var(--black);
+      text-decoration: none;
+      font-size: 0.9em;
+      font-weight: 600;
+    }
+  
+    .navMiddleContainer .rightNavitem ul li a:hover {
+      color: var(--pink);
+    }
+  
+    .menu-bg {
+      height: 30%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .menu {
+      /* border: 1px solid; */
+      height: 100%;
+      width: 98%;
+      display: flex;
+      align-items: center;
+      display: none;
+    }
+  
+    footer {
+      height: 140vh;
+    }
+  
+    footer .footerTop {
+      border: 2px solid wheat;
+      width: 80%;
+      height: 90%;
+      margin: 0 auto;
+      display: flex;
+    }
+  
+    footer .footerTop .footerTopItems {
+      display: flex;
+      flex-direction: column;
+      /* height: 40vh; */
+      gap: 10%;
+    }
+  
+    footer .footerTop .footerTopItems .footerTopItem1 {
+      border: 1px solid white;
+      gap: 5vh;
+      width: 80%;
+      height: 10%;
+    }
+  
+    .footerTopItem1Info {
+      border: 1px solid rgb(194, 48, 48);
+      height: 100%;
+      width: 100%;
+    }
+    footer .footerTop .footerTopItems .footerTopItem1 {
+      /* border: 1px solid; */
+      height: 10vh;
+      width: 100%;
+      height: 100%;
+    }
+    footer .footerTop .footerTopItems .footerTopItem2 {
+      /* border: 1px solid; */
+      width: 100%;
+      height: 100%;
+    }
+  }
+@media Screen and (max-width: 740px) {
     header {
       height: 45vh;
       width: 100%;
@@ -866,14 +1057,7 @@
       border-top-left-radius: 10px;
     }
   
-    /* .navMiddleContainer .search button {
-      width: 15%;
-      height: 100%;
-      border: none;
-      background-color: var(--pink);
-      border-bottom-right-radius: 10px;
-      border-top-right-radius: 10px;
-    } */
+    
   
     .navMiddleContainer .rightNavitem {
       /* border: 1px solid red; */
@@ -919,7 +1103,7 @@
     }
   
     footer {
-      height: 100vh;
+      height: 180vh;
     }
   
     footer .footerTop {
@@ -944,10 +1128,16 @@
   
     .footerTopItem1Info {
       border: 1px solid rgb(194, 48, 48);
-      height: 100%;
+      /* height: 10vh; */
       width: 100%;
     }
   
+    footer .footerTop .footerTopItems .footerTopItem1 {
+      /* border: 1px solid; */
+      height: 10vh;
+      width: 100%;
+      height: 100%;
+    }
     footer .footerTop .footerTopItems .footerTopItem2 {
       /* border: 1px solid; */
       width: 100%;
