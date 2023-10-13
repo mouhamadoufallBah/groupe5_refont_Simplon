@@ -16,6 +16,9 @@
     /* align-items: center; */
     text-align: center;
     padding-bottom: 5vh;
+   
+      background-color: var(--grey)!important;
+    
   }
   .blocButtonUps{
     gap: 9vh;
@@ -29,3 +32,18 @@
     height: 5vh;
     border-radius: 20px;
   }
+
+  .btn-danger  {
+    background-color: var(--grey) ;
+    border: 2px solid;
+    /* gap: 9vh;
+    width: 20%;
+    height: 5vh;
+    border-radius: 20px; */
+  }
+.buttonColor{
+  color: var(--white);
+  font-weight: 900;
+  /* border: 2px solid; */
+
+}
