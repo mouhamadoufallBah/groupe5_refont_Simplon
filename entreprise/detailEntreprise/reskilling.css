@@ -39,3 +39,18 @@
   .contenu2Resk .card-text{
     float: left;
   }
+  
+  .btn-danger  {
+    background-color: var(--grey) ;
+    border: 2px solid;
+    /* gap: 9vh;
+    width: 20%;
+    height: 5vh;
+    border-radius: 20px; */
+  }
+.buttonColor{
+  color: var(--white) !important;
+  font-weight: 900;
+  /* border: 2px solid; */
+
+}

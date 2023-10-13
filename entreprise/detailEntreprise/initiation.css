@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
+    list-style: none !important;
     text-decoration: none !important;
   }
   
@@ -24,7 +24,19 @@
   .blocButtonIn{
     gap: 9vh;
     padding: 5vh;
+    justify-content: center;
+    
   } 
+  .blocButtonIn :hover{
+    /* background-color: var(--grey); */
+    /* gap: 9vh;
+    padding: 5vh;
+    justify-content: center; */
+  } 
+  .blockcard{
+    padding-bottom: 5vh;
+    padding-left: 20vh;
+  }
 
   .reskButtonIn{
     background-color: var(--pink);
@@ -32,4 +44,25 @@
     width: 20%;
     height: 5vh;
     border-radius: 20px;
+    /* border: 5px solid !Important; */
+
   }
+  .btn-danger  {
+    background-color: var(--grey) ;
+    border: 2px solid;
+    /* gap: 9vh;
+    width: 20%;
+    height: 5vh;
+    border-radius: 20px; */
+  }
+.buttonColor{
+  color: var(--white)  !important;
+  font-weight: 900; 
+
+}
+.img-fluid{
+  height: 100%;
+}
+#buttonColor1 {
+  color: var(--black) !important;
+}
