@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="blog.css">
-        <title>BLOG_2</title>
-        
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+   
+</head>
 <body>
+
     <header>
         <div class="headerContainer">
             <div class="info-container-black">
@@ -91,56 +92,55 @@
             </div>
         </div>
     </header>
-    <div class="banner">
-        <div class="bannerOpacity">
-            <div class="logoBanner">
-               BL<span>O</span>G
-            </div>
+    
 
-        </div>
-
+    <div class="row mt-5" style="width: 80%;margin-left: 10%;">
+        <div class="card" style=" background-color: #CE0033; display: flex; margin-top: 22vh;">
+           <div class="row">
+            <div class="card-body" style="color: #fff;">
+                <h5><span><i class="fa-solid fa-phone fa-shake"></i></span>&nbsp; APPELEZ-NOUS <br> <span>&nbsp;&nbsp;&nbsp;+33388480163</span></h5>
+              </div>
+              <div class="card-body" style="color: #fff;">
+                  <h5><span><i class="fa-solid fa-location-dot fa-bounce"></i></span>&nbsp;&nbsp;ADRESSE <br> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yoff,Dakar</span></h5>
+                </div>
+                <div class="card-body" style="color: #fff;">
+                  <h5><span><i class="fa-solid fa-clock fa-spin fa-spin-reverse"></i>&nbsp; JOUR OUVRABLE<br> <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lun-Ven</span></h5>
+                </div>
+           </div>
+          </div>
+          
+            <form style="display: grid; justify-content: center; align-items:center;" >
+                <div class="card" style="border: 1px solid black; z-index: 1;  margin-top: -52vh; margin-left: 22vh;">
+                    <div class="row">
+                        <div class="mb-3 col-md-12"><h1 style="display: flex; font-weight: bold; justify-content: center; color: #CE0033;">CONTACTER-NOUS</h1></div>
+                    </div>
+                    <div class="card-body" >
+                        <div class="mb-3 col-md-12">
+                          <label for="exampleInputprenom1" style="font-size:20px;" class="form-label" >Prenom <sup style="color: red;font-size: 16px;">*</sup></label>
+                          <input  type="prenom" class="form-control " id="exampleInputprenom1" aria-describedby="prenomHelp" required="">
+                        </div>
+                        <div class="mb-3 mb-3 col-md-12">
+                          <label for="exampleInputnom" style="font-size:20px;" class="form-label">Nom<sup style="color: red;font-size: 16px;">*</sup></label>
+                          <input type="nom" class="form-control" id="exampleInputnom" required="">
+                        </div>
+                        <div class="mb-3 mb-3 col-md-12">
+                            <label for="exampleInputEmail1" style="font-size:20px;" class="form-label">Email address<sup style="color: red;font-size: 16px;">*</sup></label>
+                            <input type="email"  class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          </div>
+                        <div class="mb-3 mb-3 col-md-12">
+                            <label for="exampleInputtel1" style="font-size:20px;"  class="form-label">Subject<sup style="color: red;font-size: 16px;">*</sup></label>
+                            <textarea type="subject"  class="form-control" id="exampleInputsubject1" aria-describedby="subjectHelp" required=""></textarea>
+                          </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1" required="">
+                          <label class="form-check-label" for="exampleCheck1">J'accepte de recevoir d'autres communications de simplon.co<sup style="color: red;font-size: 16px;">*</sup></label>
+                        </div>
+                        <button type="submit" style="background-color: #CE0033; color: #fff;" class="btn col-md-12" required="">Envoyer</label></button>
+                    </div>
+                  </div>
+              </form>
     </div>
 
-    <main class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="content_items_1" id="player"><iframe width="650" height="315" src="https://www.youtube.com/embed/0PeqnLq12V8?si=lrmUdyndIougP3XP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <h1 style="color:#ce0033; font-size: 15px;">Zoom sur Simplon.co : la pédagogie chez Simplon.co</h1>
-                    <div class="content_items"><div class="card mb-3 h-100" style="width: 100%;">
-                        <div class="row ">
-                          <div class="col-md-4">
-                            <img src="https://simplon.co/storage/70879/WomenIntech-t%C3%A9moignages-Apprenantes-Simplon.png" class="img-fluid rounded-start h-100"  alt="...">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body ">
-                              <p class="card-text" style="color: #ce0033; font-weight: bold; font-size: 17px;">Découvrez les parcours inspirants de quatrenapprenantes en formation à Bordeaux,Aulnay-sous-Bois Montpellier et Alés</p>
-                              <p class="card-text"><small class="text-body-secondary">8 mars 2023</small></p>
-                              <div ><a href="#">Voir plus</a></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div></div>
-                    </div>
-            </div>
-            <div class="col-md-6">
-                <div class="content_items_2"><div class="card">
-                    <div class="card-body" style="background-color: #ce0033;color: #ffffff; height: 60%;">
-                      <div class="titre" style="font-size: 23px;"><h2>Simplon.co organise des journées portes ouvertes uniques pour vous permettre de découvrir l'Apple Foundation Program.</h2></div>
-                        <div class="cardparagraph" style="font-size: 17px;"> <p>Ces portes ouvertes seront l'occasion parfaite pour venir rencontrer notre équipe, échanger avec les alumni présents et découvrir les ateliers et présentations passionnants qui auront lieu tout au long de la journée.
-                           </p>
-                            <span> Que vous soyez passionné.e par la technologie, curieux de découvrir les opportunités de carrière dans le domaine du développement iOS, ou simplement intéressé.e par l'apprentissage de nouvelles compétences, ces journées portes ouvertes sont faites </span>
-                            <p>Au programme de ces journées portes ouvertes :
-                                des ateliers de design thinking et de découverte du code, de création d'une mini application, ainsi qu'un atelier swift playground. 📱🧠
-                                des témoignages d'Alumni 🧑‍💻👩‍💻
-                                ainsi que la présentation de projets réalisés, ainsi qu'une visite du centre de formation. 🏢🎓
-                                </p>
-                                <span>L'entrée est libre à toute heure de la journée et les inscriptions sont ouvertes pour les villes 📍de Montreuil, Toulouse, Marseille et Lille.</span>
-                            <span>Ces journées portes ouvertes sont gratuites et ouvertes à tous.tes, alors n'hésitez pas à venir nous rencontrer à tout moment de la journée.</span></div>
-                    </div>
-                  </div></div>
-            </div>
-        </div>
-    </main>
     <footer>
         <div class="footerTop">
             <div class="footerTopItems">
@@ -233,6 +233,8 @@
             menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
