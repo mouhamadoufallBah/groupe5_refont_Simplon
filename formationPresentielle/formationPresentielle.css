@@ -17,6 +17,39 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.fixed{
+	position: fixed;
+	top: 0;
+}
+
+#progress{
+  background-color: var(--pink);
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 3;
+}
+
+#progressValue{
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: var(--white);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: var(--pink);
+  font-weight: bold;
+}
+
 .menuTogler {
   background-color: transparent;
   border: none;
@@ -33,7 +66,7 @@ body {
   background-color: rgba(146, 18, 18, 0.199);
   backdrop-filter: blur(15px);
   overflow: hidden;
-  display: none;
+  /* display: none; */
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -185,6 +218,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  z-index: 3;
 }
 
 .menu {
