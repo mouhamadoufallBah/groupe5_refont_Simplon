@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta http-equiv="refresh" content="5">
+    <!-- <meta http-equiv="refresh" content="5"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,6 +12,9 @@
 </head>
 
 <body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+      </div>
     <header>
         <div class="headerContainer">
             <div class="info-container-black">
@@ -46,24 +49,21 @@
                                 class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                     </div>
                     <div class="rightNavitem">
-                        <ul>
-                            <li><a href="#">Devenir formateur</a></li>
-                            <li><a href="#">Rejoigner nos equipes</a></li>
-                        </ul>
+
                     </div>
                     <button class="menuTogler" id="menuTogler"><i class="bi bi-list test menuToglerIcon"
                             id="menuToglerIcon" style="font-size: 3em; color: rgb(5, 5, 5);"></i></button>
                 </div>
             </div>
 
-            <div class="menu-bg">
+            <div class="menu-bg navBar">
                 <div class="menu">
                     <ul>
                         <li><a href="#">Acceuil</a></li>
                         <li><a href="#">A propos</a></li>
                         <li><a href="#">Entreprise</a>
                         </li>
-                        <li><a href="#">Nos Formations</a>
+                        <li><a href="../formationPresentielle/formationPresentielle.html">Nos Formations</a>
                         </li>
                         <li><a href="#">Blog</a></li>
                         <li><a href="#">Contactez-nous</a></li>
@@ -448,17 +448,73 @@
 
 
     <script>
-        //menu
-        let menuTogler = document.querySelector('.menuTogler');
-        let menuToglerIcon = document.querySelector('.menuTogler i');
-        let dropDownMenu = document.querySelector('.dropDownMenu');
 
-        menuTogler.onclick = function () {
-            dropDownMenu.classList.toggle('open');
-            let isOpen = dropDownMenu.classList.contains('open');
+        //navBar fixed
+        let navBarFixed = () => {
+                let navBar = document.querySelector(".navBar");
+                console.log(navBar);
+        
+                let pos = document.documentElement.scrollTop;
+                
+        
+                if (pos > 10) {
+                  navBar.classList.add("fixed");
+                  document.querySelector('.menu-bg').style.height = '10%';
+                  console.log("fixed");
+                } else {
+                  navBar.classList.remove("fixed");
+                  console.log("not-fixed");
+                }
+              };
+        
+              // window.onscroll = navBarFixed;
+              // window.onload = navBarFixed;
+        
+              // scroll
+              let calcScrollValue = () =>{
+                let scrollProgress = document.getElementById('progress');
+                let scrolProgressValue = document.getElementById('progressValue');
+        
+                let pos = document.documentElement.scrollTop;
+                let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                let scrollValue = Math.round((pos * 100)/calcHeight)
+                if(pos>10){
+                  scrollProgress.style.display = 'grid';
+                }else{
+                  scrollProgress.style.display = 'none';
+                }
+        
+                scrollProgress.addEventListener('click', () => {
+                  document.documentElement.scrollTop = 0;
+                })
+        
+                scrollProgress.style.background = `conic-gradient( #ce0033 ${scrollValue}%, white ${scrollValue}%)`;
+              }
+        
+              // Ajouter un seul gestionnaire d'événements
+              window.addEventListener('scroll', () => {
+                navBarFixed();
+                calcScrollValue();
+              });
+        
+              // Exécutez les fonctions une fois au chargement de la page
+              window.addEventListener('load', () => {
+                navBarFixed();
+                calcScrollValue();
+              });
 
-            menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
-        }
+       
+       //menu
+  let menuTogler = document.querySelector('.menuTogler');
+  let menuToglerIcon = document.querySelector('.menuTogler i');
+  let dropDownMenu = document.querySelector('.dropDownMenu');
+
+  menuTogler.onclick = function(){
+    dropDownMenu.classList.toggle('open');
+    let isOpen = dropDownMenu.classList.contains('open');
+
+    menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+  }
     </script>
 </body>
 
