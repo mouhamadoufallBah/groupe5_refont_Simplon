@@ -75,7 +75,7 @@
 </footer>
 
 <script>
-
+        
     //navBar fixed
     let navBarFixed = () => {
             let navBar = document.querySelector(".navBar");
@@ -86,10 +86,11 @@
     
             if (pos > 10) {
               navBar.classList.add("fixed");
-              document.querySelector('.menu-bg').style.height = '40%';
+              document.querySelector('.menu-bg').style.height = '10%';
               console.log("fixed");
             } else {
               navBar.classList.remove("fixed");
+              document.querySelector('.menu-bg').style.height = '40%';
               console.log("not-fixed");
             }
           };
