@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="faq.css">
     <title>FAQ</title>
 </head>
+
 <body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
     <header>
         <div class="headerContainer">
             <div class="info-container-black">
@@ -39,51 +47,46 @@
             <div class="navMiddle-bg">
                 <div class="navMiddleContainer">
                     <div class="logo">
-                        <img src="/image/logo.png" alt="">
+                        <img src="../image/logo.png" alt="">
                     </div>
                     <div class="search">
                         <input type="search" name="" id="" placeholder="&nbsp;Recherche"><button><i
                                 class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                     </div>
                     <div class="rightNavitem">
-                        <ul>
-                            <li><a href="#">Devenir formateur</a></li>
-                            <li><a href="#">Rejoigner nos equipes</a></li>
-                        </ul>
+                        
                     </div>
                     <button class="menuTogler" id="menuTogler"><i class="bi bi-list test menuToglerIcon"
                             id="menuToglerIcon" style="font-size: 3em; color: rgb(5, 5, 5);"></i></button>
                 </div>
             </div>
 
-            <div class="menu-bg">
+            <div class="menu-bg navBar">
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Acceuil</a></li>
+                        <li><a href="../acceuil/Accueil.html">Acceuil</a></li>
                         <li><a href="#">A propos</a></li>
                         <li><a href="#">Entreprise</a>
                         </li>
-                        <li><a href="#">Nos Formations</a>
+                        <li><a href="../formationPresentielle/formationPresentielle.html">Nos Formations</a>
                         </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contactez-nous</a></li>
-                        <li><a href="#">Simplon Recrute</a></li>
+                        <li><a href="../blog/blog1.html">Blog</a></li>
+                        <li><a href="../contact/contact1.html">Contactez-nous</a></li>
+                        <li><a href="../recrutementSimplon/simplonR2.html">Simplon Recrute</a></li>
                     </ul>
 
 
                     <div class="dropDownMenu" id="dropdownMenu">
                         <ul>
-                            <li><a href="#">Acceuil</a></li>
+                            <li><a href="../acceuil/Accueil.html">Acceuil</a></li>
                             <li><a href="#">A propos</a></li>
                             <li><a href="#">Entreprise</a>
                             </li>
-                            <li><a href="#">Nos Formations</a>
+                            <li><a href="../formationPresentielle/formationPresentielle.html">Nos Formations</a>
                             </li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contactez-nous</a></li>
-                            <li><a href="#">Simplon Recrute</a></li>
-                            <li><a href="#">Devenir formateur</a></li>
-                            <li><a href="#">Rejoigner nos equipes</a></li>
+                            <li><a href="../blog/blog1.html">Blog</a></li>
+                            <li><a href="../contact/contact1.html">Contactez-nous</a></li>
+                            <li><a href="../recrutementSimplon/simplonR2.html">Simplon Recrute</a></li>
                         </ul>
                     </div>
                 </div>
@@ -99,94 +102,200 @@
 
     </div>
 
-        <div class="faq px-5" style="display: flex; justify-content: center; align-items: center;">
-            <div class="containerFaq" style="width: 98%;">
+    <div class="faq px-5" style="display: flex; justify-content: center; align-items: center;">
+        <div class="containerFaq" style="width: 98%;">
             <div class="bloc">
-                </div>
-                <div class="left">
-                  <details style="background-color: #CE0033; color: #ffffff;">
-                      <summary style="font-weight: bold;">Simplon est-elle la premiére et seule formation en son genre <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div></summary>
-                      <p>Bien qu’elle se distingue par son format à la fois intensif, vraiment gratuit (voir « gratuité »), tourné vers les publics éloignés de l’emploi et sous-représentés dans le numérique, Simplon n’est pas la première formation de ce type, ni la seule.</p>
-                      <p> Tout d’abord, plusieurs autres formations existaient déjà en France avant l’apparition de Simplon.co en 2013, comme la Web@cadémie, R2K, 3WAcadémie ou encore Cefim et bien d’autres dans les territoires…
-                          Par la suite, d'autres se sont créées simultanément à Simplon, comme Le Wagon, l’Ecole 42, Webforce3...
-                          Puis, des formations  se sont créées au contact de Simplon (copycats, forks ou franchisés s’étant autonomisés) : Wild Code School (auparavant Simplon Village dans le Perche), Pop School, Access Code School ou Pôle S,...Enfin, des formations se sont mises en place dans le sillage du dispositif Grande École du Numérique et complètent cette liste. </p>
-                    </details>
-                    <details style="background-color: #CE0033; color: #ffffff;">
-                        <summary style="font-weight: bold;"> Quelle différence entre Simplon.co et 42<div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                       <p> Il s’agit de la question la plus fréquente qu’on nous pose, et notre réponse reste inchangée depuis le lancement conjoint de Simplon et de l'École 42 qui ont été quasi simultanés en 2013. Si les deux concepts comportent effectivement beaucoup de ressemblances, elles ont aussi leurs particularités.</p>
-                        <p>Elles sont similaires, car nous appartenons à la même “vague”, à la même démarche visant à innover pour résoudre l’absurdité patente entre un besoin de compétences non satisfait et des talents potentiels au chômage en manque de formation.
-                          Similaires, car elles sont gratuites et que désormais l'École 42 n’a plus de limite d’âge ; similaires, enfin, parce que l’on y trouve une volonté d’innovation pédagogique.</p>
-                    </details>
-                    <details style="background-color: #CE0033; color: #ffffff;">
-                        <summary style="font-weight: bold;"> Quelle sélection et quels critères pour entrer à Simplon.co?<div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div></summary>
-                        <p>Les critères sociaux sont prépondérants et préalables pour accéder à nos formations qui sont réellement et intégralement gratuites, d’où le fait que nous souhaitons privilégier un public en particulier.
-                          Les demandeurs d’emploi (décrocheurs, ou longue durée), les personnes en reconversion et les seniors, les publics réfugiés ou primo-arrivants, les personnes en situation de handicap, les allocataires de minimas sociaux et les publics éloignés du numérique ou de l’emploi sont notamment concernés. Mais ce n’est pas suffisant, car le nombre de places par session est limité.</p>
-                          <p>Dans une autre mesure, 7 mois sans pouvoir forcément bénéficier de revenus; tout en assistant à une formation intensive à plein temps dont la pédagogie est active et non scolaire ne convient pas systématiquement à tout le monde. C’est donc au travers d’une sélection sur la base de la motivation, de l’appétence, de la capacité à travailler en équipe, de la prédisposition au métier numérique visé par la formation et de la compatibilité avec le modèle pédagogique (autonomie, pédagogies actives, mode projet, peer-learning,…) ainsi qu’à l’organisation de Simplon.co (pair programming, travail collaboratif) que se décide l’admission.</p>
-                    </details>
-                    
-                    <details style="background-color: #CE0033; color: #ffffff;">
-                        <summary style="font-weight: bold;"> Simplon.co,c'est surtout (ou beaucoup) de com <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                        Les fondateurs de Simplon.co se sont rencontrés au CELSA – la formation universitaire en communication et en journalisme qui dépend de la Sorbonne – soit parce qu’ils y étaient étudiants (Andrei Vladescu-Olt, Erwan Kezzar, Nicolas Danet), soit parce qu’ils y intervenaient, comme Frédéric Bardeau.
-                      <p>
-                          L’équipe de départ comportait non seulement des développeurs (chevronnés comme Andrei, en formation comme Victor) mais surtout des passionnés d’Internet voyant dans le réseau un levier de changement social et de pouvoir d’agir individuel. 
-                          </p>
-                          <p>Ensuite, après la création en mode “bootstrap”, c’est effectivement une forte médiatisation qui a porté Simplon - comme 42 d’ailleurs - et qui a permis la notoriété du modèle au bénéfice du recrutement de candidats, de partenaires et de soutiens publics.</p>
-  
-                    </details>
-                    <details style="background-color: #CE0033; color: #ffffff;">
-                        <summary style="font-weight: bold;"> Simplon.co ne s'intéresse ou ne forme qu'au métier de développeur <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                       <p> Historiquement c’était vrai, Simplon.co s’est positionné sur un référentiel de formation de développeur web et mobile, suivant en cela les précédents américains (« bootcamps ») et les initiatives pionnières qui existaient déjà en France.
-                          Et ça reste une part importante de nos formations, parce que c’est le métier le plus en tension dans le domaine du numérique, mais le référentiel a été rapidement déployé sous différentes versions (Ruby, PHP, Java, JS), sous différentes modalités (qualifiante ou certifiante) et avec des approches métiers différenciées (full stack, back-end, front-end, intégration, CMS,…)</p>
-                          <p>Mais très rapidement, constatant à la fois que le métier de développeur exige des qualités particulières qui ne sont pas à portée de tous les profils, que les Simploniens formés en tant que développeurs exerçaient des métiers différents une fois employés, et enfin que d’autres métiers du numérique étaient également en tension – et permettaient donc de proposer des parcours d’insertion plus inclusifs, Simplon.co a investigué d’autres référentiels de formation.</p>
-  
-                          <p>Référent numérique, data analyste, Wordpress/CMS, DevOps, Cybersécurité, technicien data IA, Adminsys, etc. Enfin, Simplon.co explore en partenariat avec des entreprises et d’autres organismes de formation des référentiels de formation autour des technologies Mainframe, FTTH, fab manager,…</p>
-                    </details>
-                    <details style="background-color: #CE0033; color: #ffffff;">
-                      <summary style="font-weight: bold;"> Simplon.co,les écoles d'informatique et les informaticiens <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                      <p>Les formations Simplon.co sont complémentaires à l’offre de formation initiale existante et n’ont aucunement vocation à les critiquer ou à s’y substituer, bien au contraire. Des collaborations existent entre Simplon.co et 42, l'EPSI, les INSA et bien d’autres structures.
-                          De la même façon, Simplon.co a des interactions multiples avec certaines universités, certains IUT, avec l’INRIA au travers des démarches liées au programme des Investissements d’Avenir désireux de promouvoir la “culture du code” (CAPPRIO, Class’Code, etc.).</p>
-                      <p>En revanche, nous pensons véritablement que la programmation informatique n’est PAS QU’UNE science, c’est aussi un artisanat, une passion, un objet d’autodidaxie, et qu’elle n’est pas réservée aux informaticiens diplômés mais bien à tous les passionnés.
-                          Dans « Lire, écrire, compter, coder », Frédéric Bardeau, Président et cofondateur de Simplon.co, et Nicolas Danet reviennent sur ces subtilités et les différentes approches pédagogiques qui coexistent en France et dans le monde par rapport à l’apprentissage de la programmation informatique.</p>
-                  </details>
-                  <details style="background-color: #CE0033; color: #ffffff;">
-                      <summary style="font-weight: bold;"> Simplon.co est un modéle anti-Education Nationale<div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                      <p>Si Simplon est statutairement « hors de l’Éducation Nationale » car relevant de la formation professionnelle continue, son modèle de formation accélérée est complémentaire à l’offre de formation initiale, les interactions avec le Ministère de l’Éducation Nationale de l’Enseignement Supérieur et de la Recherche, les Rectorats, les DANE ainsi les collaborations avec des écoles (enfants), les collèges, les lycées et établissements d’enseignement supérieur sont nombreuses et nous souhaitons qu’elles s’intensifient.</p>
-                      <p>C’est le cas pour les opérations de type Europe Code Week et Hour of Code, mais également pour les actions liées au programmes des Investissements d’Avenir “Culture du code”. Nos principes pédagogiques empruntent à des méthodes qui sont parfaitement connues et utilisées dans bien des écoles délivrant des diplômes Éducation Nationale ou apparentés : pédagogie par projets, formation à distance en ligne et classe inversée, évaluation par les pairs,…</p>
-                  </details>
-                  <details style="background-color: #CE0033; color: #ffffff;">
-                      <summary style="font-weight: bold;"> Simplon.co est une organisation militante et partisane<div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                     <p>Oui, clairement, c’est assumé et revendiqué, le tout au bénéfice de l’impact social et de la performance économique au service de l’intérêt général.
-                      Le modèle de Simplon.co est hybride, ce qui est assez typique dans l'Économie Sociale et Solidaire : c’est celui des entreprises commerciales agréées solidaires d’utilité sociale (ESUS).
-                     </p>
-                     <p> Elles utilisent effectivement le levier économique et une lucrativité encadrée pour viser des objectifs d’utilité sociale et d’intérêt général. Nos engagements statutaires liés à l’agrément ESUS et notamment la lucrativité limitée et la non cotation de l’entreprise, ainsi que l’impossibilité de versement de dividendes ou de cotation sur les marchés financiers assurent la cohérence et l’éthique de l’ensemble de la démarche.
-                      Concernant l’opacité, les règles classiques des entreprises s’appliquent et Simplon.co rend compte de son activité à ses actionnaires, à l’extérieur via son Conseil des Parties Prenantes et en interne de façon extrêmement détaillée et transparente.</p>
-                  </details>
-                  <details style="background-color: #CE0033; color: #ffffff;">
-                      <summary style="font-weight: bold;"> Simplon.co forme des génies de l'informatique en quelques mois<div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                      <p>On aimerait que ce soit vrai pour tous les Simploniens mais ce n’est pas le cas. Centrées sur les débutants demandeurs d’emplois, les formations Simplon.co utilisent la tension de recrutement sur les métiers numériques pour créer des emplois, redonner du pouvoir d’agir à des profils talentueux mais qui ont manqué d’opportunités.
-                         </p>
-                         <p> C’est notre objectif principal. Il arrive que des débutants se révèlent être de très bons potentiels, pour devenir de bons développeurs, parfois géniaux même, ou bien qu’ils reprennent des études diplômantes après avoir “décroché” mais cela dépend des personnes elles-mêmes.
-                          Il est clair qu’un débutant au bout de 6 ou 7 mois de formation ne peut pas obtenir le niveau d’un développeur confirmé et expérimenté ou d’un élève qui sort d’une école d’ingénieur ou de 42.</p>
-                  </details>
-                  <details style="background-color: #CE0033; color: #ffffff;">
-                      <summary style="font-weight: bold;"> Simplon.co s'essaime comme une franchise <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div> </summary>
-                     <p>L’essaimage de Simplon.co est toujours déclenché sur la base d’une manifestation d’intérêt de porteurs de projets locaux pouvant être des entrepreneurs, des organismes de formation, des collectivités, des structures parapubliques, ou en réponse à un appel d’offre régional (cf. Occitanie).
-                      Le processus de qualification de la demande, de sélection des projets d’essaimages et leur conduite suit des règles claires et contraignantes destinées à assurer la pertinence, le caractère multi-parties prenantes et la pérennité de la démarche.</p>
-                  </details>
-                   
-                </div>
-        
-            </div></div>
-    
+            </div>
+            <div class="left">
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;">Simplon est-elle la premiére et seule formation en son genre
+                        <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>Bien qu’elle se distingue par son format à la fois intensif, vraiment gratuit (voir « gratuité
+                        »), tourné vers les publics éloignés de l’emploi et sous-représentés dans le numérique, Simplon
+                        n’est pas la première formation de ce type, ni la seule.</p>
+                    <p> Tout d’abord, plusieurs autres formations existaient déjà en France avant l’apparition de
+                        Simplon.co en 2013, comme la Web@cadémie, R2K, 3WAcadémie ou encore Cefim et bien d’autres dans
+                        les territoires…
+                        Par la suite, d'autres se sont créées simultanément à Simplon, comme Le Wagon, l’Ecole 42,
+                        Webforce3...
+                        Puis, des formations se sont créées au contact de Simplon (copycats, forks ou franchisés s’étant
+                        autonomisés) : Wild Code School (auparavant Simplon Village dans le Perche), Pop School, Access
+                        Code School ou Pôle S,...Enfin, des formations se sont mises en place dans le sillage du
+                        dispositif Grande École du Numérique et complètent cette liste. </p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Quelle différence entre Simplon.co et 42<div><i
+                                style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p> Il s’agit de la question la plus fréquente qu’on nous pose, et notre réponse reste inchangée
+                        depuis le lancement conjoint de Simplon et de l'École 42 qui ont été quasi simultanés en 2013.
+                        Si les deux concepts comportent effectivement beaucoup de ressemblances, elles ont aussi leurs
+                        particularités.</p>
+                    <p>Elles sont similaires, car nous appartenons à la même “vague”, à la même démarche visant à
+                        innover pour résoudre l’absurdité patente entre un besoin de compétences non satisfait et des
+                        talents potentiels au chômage en manque de formation.
+                        Similaires, car elles sont gratuites et que désormais l'École 42 n’a plus de limite d’âge ;
+                        similaires, enfin, parce que l’on y trouve une volonté d’innovation pédagogique.</p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Quelle sélection et quels critères pour entrer à Simplon.co?
+                        <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>Les critères sociaux sont prépondérants et préalables pour accéder à nos formations qui sont
+                        réellement et intégralement gratuites, d’où le fait que nous souhaitons privilégier un public en
+                        particulier.
+                        Les demandeurs d’emploi (décrocheurs, ou longue durée), les personnes en reconversion et les
+                        seniors, les publics réfugiés ou primo-arrivants, les personnes en situation de handicap, les
+                        allocataires de minimas sociaux et les publics éloignés du numérique ou de l’emploi sont
+                        notamment concernés. Mais ce n’est pas suffisant, car le nombre de places par session est
+                        limité.</p>
+                    <p>Dans une autre mesure, 7 mois sans pouvoir forcément bénéficier de revenus; tout en assistant à
+                        une formation intensive à plein temps dont la pédagogie est active et non scolaire ne convient
+                        pas systématiquement à tout le monde. C’est donc au travers d’une sélection sur la base de la
+                        motivation, de l’appétence, de la capacité à travailler en équipe, de la prédisposition au
+                        métier numérique visé par la formation et de la compatibilité avec le modèle pédagogique
+                        (autonomie, pédagogies actives, mode projet, peer-learning,…) ainsi qu’à l’organisation de
+                        Simplon.co (pair programming, travail collaboratif) que se décide l’admission.</p>
+                </details>
 
-      <footer>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co,c'est surtout (ou beaucoup) de com <div><i
+                                style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    Les fondateurs de Simplon.co se sont rencontrés au CELSA – la formation universitaire en
+                    communication et en journalisme qui dépend de la Sorbonne – soit parce qu’ils y étaient étudiants
+                    (Andrei Vladescu-Olt, Erwan Kezzar, Nicolas Danet), soit parce qu’ils y intervenaient, comme
+                    Frédéric Bardeau.
+                    <p>
+                        L’équipe de départ comportait non seulement des développeurs (chevronnés comme Andrei, en
+                        formation comme Victor) mais surtout des passionnés d’Internet voyant dans le réseau un levier
+                        de changement social et de pouvoir d’agir individuel.
+                    </p>
+                    <p>Ensuite, après la création en mode “bootstrap”, c’est effectivement une forte médiatisation qui a
+                        porté Simplon - comme 42 d’ailleurs - et qui a permis la notoriété du modèle au bénéfice du
+                        recrutement de candidats, de partenaires et de soutiens publics.</p>
+
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co ne s'intéresse ou ne forme qu'au métier de
+                        développeur <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p> Historiquement c’était vrai, Simplon.co s’est positionné sur un référentiel de formation de
+                        développeur web et mobile, suivant en cela les précédents américains (« bootcamps ») et les
+                        initiatives pionnières qui existaient déjà en France.
+                        Et ça reste une part importante de nos formations, parce que c’est le métier le plus en tension
+                        dans le domaine du numérique, mais le référentiel a été rapidement déployé sous différentes
+                        versions (Ruby, PHP, Java, JS), sous différentes modalités (qualifiante ou certifiante) et avec
+                        des approches métiers différenciées (full stack, back-end, front-end, intégration, CMS,…)</p>
+                    <p>Mais très rapidement, constatant à la fois que le métier de développeur exige des qualités
+                        particulières qui ne sont pas à portée de tous les profils, que les Simploniens formés en tant
+                        que développeurs exerçaient des métiers différents une fois employés, et enfin que d’autres
+                        métiers du numérique étaient également en tension – et permettaient donc de proposer des
+                        parcours d’insertion plus inclusifs, Simplon.co a investigué d’autres référentiels de formation.
+                    </p>
+
+                    <p>Référent numérique, data analyste, Wordpress/CMS, DevOps, Cybersécurité, technicien data IA,
+                        Adminsys, etc. Enfin, Simplon.co explore en partenariat avec des entreprises et d’autres
+                        organismes de formation des référentiels de formation autour des technologies Mainframe, FTTH,
+                        fab manager,…</p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co,les écoles d'informatique et les informaticiens
+                        <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>Les formations Simplon.co sont complémentaires à l’offre de formation initiale existante et n’ont
+                        aucunement vocation à les critiquer ou à s’y substituer, bien au contraire. Des collaborations
+                        existent entre Simplon.co et 42, l'EPSI, les INSA et bien d’autres structures.
+                        De la même façon, Simplon.co a des interactions multiples avec certaines universités, certains
+                        IUT, avec l’INRIA au travers des démarches liées au programme des Investissements d’Avenir
+                        désireux de promouvoir la “culture du code” (CAPPRIO, Class’Code, etc.).</p>
+                    <p>En revanche, nous pensons véritablement que la programmation informatique n’est PAS QU’UNE
+                        science, c’est aussi un artisanat, une passion, un objet d’autodidaxie, et qu’elle n’est pas
+                        réservée aux informaticiens diplômés mais bien à tous les passionnés.
+                        Dans « Lire, écrire, compter, coder », Frédéric Bardeau, Président et cofondateur de Simplon.co,
+                        et Nicolas Danet reviennent sur ces subtilités et les différentes approches pédagogiques qui
+                        coexistent en France et dans le monde par rapport à l’apprentissage de la programmation
+                        informatique.</p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co est un modéle anti-Education Nationale<div><i
+                                style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>Si Simplon est statutairement « hors de l’Éducation Nationale » car relevant de la formation
+                        professionnelle continue, son modèle de formation accélérée est complémentaire à l’offre de
+                        formation initiale, les interactions avec le Ministère de l’Éducation Nationale de
+                        l’Enseignement Supérieur et de la Recherche, les Rectorats, les DANE ainsi les collaborations
+                        avec des écoles (enfants), les collèges, les lycées et établissements d’enseignement supérieur
+                        sont nombreuses et nous souhaitons qu’elles s’intensifient.</p>
+                    <p>C’est le cas pour les opérations de type Europe Code Week et Hour of Code, mais également pour
+                        les actions liées au programmes des Investissements d’Avenir “Culture du code”. Nos principes
+                        pédagogiques empruntent à des méthodes qui sont parfaitement connues et utilisées dans bien des
+                        écoles délivrant des diplômes Éducation Nationale ou apparentés : pédagogie par projets,
+                        formation à distance en ligne et classe inversée, évaluation par les pairs,…</p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co est une organisation militante et partisane<div><i
+                                style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>Oui, clairement, c’est assumé et revendiqué, le tout au bénéfice de l’impact social et de la
+                        performance économique au service de l’intérêt général.
+                        Le modèle de Simplon.co est hybride, ce qui est assez typique dans l'Économie Sociale et
+                        Solidaire : c’est celui des entreprises commerciales agréées solidaires d’utilité sociale
+                        (ESUS).
+                    </p>
+                    <p> Elles utilisent effectivement le levier économique et une lucrativité encadrée pour viser des
+                        objectifs d’utilité sociale et d’intérêt général. Nos engagements statutaires liés à l’agrément
+                        ESUS et notamment la lucrativité limitée et la non cotation de l’entreprise, ainsi que
+                        l’impossibilité de versement de dividendes ou de cotation sur les marchés financiers assurent la
+                        cohérence et l’éthique de l’ensemble de la démarche.
+                        Concernant l’opacité, les règles classiques des entreprises s’appliquent et Simplon.co rend
+                        compte de son activité à ses actionnaires, à l’extérieur via son Conseil des Parties Prenantes
+                        et en interne de façon extrêmement détaillée et transparente.</p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co forme des génies de l'informatique en quelques mois
+                        <div><i style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>On aimerait que ce soit vrai pour tous les Simploniens mais ce n’est pas le cas. Centrées sur les
+                        débutants demandeurs d’emplois, les formations Simplon.co utilisent la tension de recrutement
+                        sur les métiers numériques pour créer des emplois, redonner du pouvoir d’agir à des profils
+                        talentueux mais qui ont manqué d’opportunités.
+                    </p>
+                    <p> C’est notre objectif principal. Il arrive que des débutants se révèlent être de très bons
+                        potentiels, pour devenir de bons développeurs, parfois géniaux même, ou bien qu’ils reprennent
+                        des études diplômantes après avoir “décroché” mais cela dépend des personnes elles-mêmes.
+                        Il est clair qu’un débutant au bout de 6 ou 7 mois de formation ne peut pas obtenir le niveau
+                        d’un développeur confirmé et expérimenté ou d’un élève qui sort d’une école d’ingénieur ou de
+                        42.</p>
+                </details>
+                <details style="background-color: #CE0033; color: #ffffff;">
+                    <summary style="font-weight: bold;"> Simplon.co s'essaime comme une franchise <div><i
+                                style="color: #ffffff;" class="fa-solid fa-plus fa-spin"></i></div>
+                    </summary>
+                    <p>L’essaimage de Simplon.co est toujours déclenché sur la base d’une manifestation d’intérêt de
+                        porteurs de projets locaux pouvant être des entrepreneurs, des organismes de formation, des
+                        collectivités, des structures parapubliques, ou en réponse à un appel d’offre régional (cf.
+                        Occitanie).
+                        Le processus de qualification de la demande, de sélection des projets d’essaimages et leur
+                        conduite suit des règles claires et contraignantes destinées à assurer la pertinence, le
+                        caractère multi-parties prenantes et la pérennité de la démarche.</p>
+                </details>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
         <div class="footerTop">
             <div class="footerTopItems">
 
                 <div class="footerTopItem1First">
                     <div class="footerTopItem1FirstContainer">
                         <div class="logoImageFooter">
-                            <img src="/image/logoWhite.png" alt="">
+                            <img src="../image/logoWhite.png" alt="">
                         </div>
                         <div class="footerTopItem1FirstIcone">
                             <i class="bi bi-facebook"></i>
@@ -199,21 +308,19 @@
                 <div class="footerTopItem2">
                     <h1 class="footerTopItem2Title">Informations<span></span></h1>
                     <div class="footerTopItem2Info">
-                        <ul>
-                            <li><a href="#l"><i class='bx bx-radio-circle-marked'></i>Devenir Formateur</a></li>
-                            <li><a href="../panier1/panier1.html"><i class='bx bx-radio-circle-marked'></i>Rejoindre nos
-                                    équipes</a></li>
-                            <li><a href="../panier2/panier2.html"><i class='bx bx-radio-circle-marked'></i>Blog</a></li>
-                            <li><a href="../paiement/paiement.html"><i class='bx bx-radio-circle-marked'></i>FAQ</a>
+                        <ul style="padding: 0;">
+                            <li><a href="../recrutementSimplon/simplonR2.html"><i class='bx bx-radio-circle-marked'></i>Devenir Formateur</a></li>
+                            <li><a href="../blog/blog1.html"><i class='bx bx-radio-circle-marked'></i>Blog</a></li>
+                            <li><a href="../faq/faq.html"><i class='bx bx-radio-circle-marked'></i>FAQ</a>
                             </li>
                             <li><a href="../paiement/paiement.html"><i class='bx bx-radio-circle-marked'></i>Contact</a>
                             </li>
-                            <li><a href="../paiement/paiement.html"><i class='bx bx-radio-circle-marked'></i>Simplon
+                            <li><a href="https://foundation.simplon.co/"><i class='bx bx-radio-circle-marked'></i>Simplon
                                     fondation</a></li>
-                            <li><a href="../paiement/paiement.html"><i
+                            <!-- <li><a href="../paiement/paiement.html"><i
                                         class='bx bx-radio-circle-marked'></i>Accessibilité</a></li>
                             <li><a href="../paiement/paiement.html"><i class='bx bx-radio-circle-marked'></i>Mentions
-                                    légales</a></li>
+                                    légales</a></li> -->
                         </ul>
 
                     </div>
@@ -221,15 +328,15 @@
                 <div class="footerTopItem2">
                     <h1 class="footerTopItem2Title">Liens utiles <span></span></h1>
                     <div class="footerTopItem2Info">
-                        <ul>
-                            <li><a href="../produits/produit.html"><i class='bx bx-radio-circle-marked'></i>Acceuil</a>
+                        <ul style="padding: 0;">
+                            <li><a href="../acceuil/Accueil.html"><i class='bx bx-radio-circle-marked'></i>Acceuil</a>
                             </li>
                             <li><a href="../categorie/categorie.html"><i class='bx bx-radio-circle-marked'></i>A
                                     Propos</a></li>
                             <li><a href=""><i class='bx bx-radio-circle-marked'></i>Entreprises</a></li>
-                            <li><a href=""><i class='bx bx-radio-circle-marked'></i>Nos formations</a></li>
+                            <li><a href="../formationPresentielle/formationPresentielle.html"><i class='bx bx-radio-circle-marked'></i>Nos formations</a></li>
                             <li><a href=""><i class='bx bx-radio-circle-marked'></i>Contactez-nous</a></li>
-                            <li><a href=""><i class='bx bx-radio-circle-marked'></i>Simplon recrute</a></li>
+                            <li><a href="../recrutementSimplon/simplonR2.html"><i class='bx bx-radio-circle-marked'></i>Simplon recrute</a></li>
                         </ul>
 
                     </div>
@@ -257,7 +364,7 @@
 
 
     </footer>
-    
+
     <script>
         //menu
         let menuTogler = document.querySelector('.menuTogler');
@@ -271,6 +378,69 @@
             menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
         }
     </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+
+        //navBar fixed
+        let navBarFixed = () => {
+            let navBar = document.querySelector(".navBar");
+            console.log(navBar);
+
+            let pos = document.documentElement.scrollTop;
+
+
+            if (pos > 10) {
+                navBar.classList.add("fixed");
+                document.querySelector('.menu-bg').style.height = '10%';
+                console.log("fixed");
+            } else {
+                navBar.classList.remove("fixed");
+                document.querySelector('.menu-bg').style.height = '40%';
+                console.log("not-fixed");
+            }
+        };
+
+        // window.onscroll = navBarFixed;
+        // window.onload = navBarFixed;
+
+        // scroll
+        let calcScrollValue = () => {
+            let scrollProgress = document.getElementById('progress');
+            let scrolProgressValue = document.getElementById('progressValue');
+
+            let pos = document.documentElement.scrollTop;
+            let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollValue = Math.round((pos * 100) / calcHeight)
+            if (pos > 10) {
+                scrollProgress.style.display = 'grid';
+            } else {
+                scrollProgress.style.display = 'none';
+            }
+
+            scrollProgress.addEventListener('click', () => {
+                document.documentElement.scrollTop = 0;
+            })
+
+            scrollProgress.style.background = `conic-gradient( #ce0033 ${scrollValue}%, white ${scrollValue}%)`;
+        }
+
+        // Ajouter un seul gestionnaire d'événements
+        window.addEventListener('scroll', () => {
+            navBarFixed();
+            calcScrollValue();
+        });
+
+        // Exécutez les fonctions une fois au chargement de la page
+        window.addEventListener('load', () => {
+            navBarFixed();
+            calcScrollValue();
+        });
+
+
+
+    </script>
 </body>
+
 </html>
