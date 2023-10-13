@@ -18,8 +18,8 @@ body {
 }
 
 .fixed{
-	position: fixed;
-	top: 0;
+    position: fixed;
+    top: 0;
 }
 
 #progress{
@@ -213,7 +213,7 @@ header {
 }
 
 .menu-bg {
-  height: 30%;
+  height: 40%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -272,6 +272,7 @@ header {
 .menu ul li a:hover {
   color: var(--pink);
 }
+
 
 /* -----------------------------------fin-------------------------------------------------------------------------   */
 
