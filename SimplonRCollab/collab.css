@@ -312,56 +312,56 @@ section.Collab{
   }
   
   .cardItem .cardItemImage1 {
-    background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y3liZXIlMjBzZWN1cml0eXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("https://t4.ftcdn.net/jpg/06/32/01/17/240_F_632011725_wLo7D2z2Hv4Wg4Pryecac43GXLJkqv5b.jpg");
     height: 45%;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage2 {
-    background-image: url("https://www.th-ab.de/fileadmin/th-ab-redaktion/Bilder/06_Forschung/06_th-ab_intelligent-systems-ai-data-science-001.jpg?hash=ebd1e8d19a592b47b8077438ef03f8a1");
+    background-image: url("https://t4.ftcdn.net/jpg/06/29/22/67/240_F_629226746_ACiKkQC4FphoRmwfe4zBUdcSVDzPqARI.jpg");
     height: 45%;  
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage3 {
-    background-image: url("https://www.advents.fr/wp-content/uploads/2019/11/iStock-9564795082.jpg");
+    background-image: url("https://t4.ftcdn.net/jpg/06/39/72/43/240_F_639724392_TP3CQJKj6rc6eygbEaBCyiB359X9InN7.jpg");
     height: 45%;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage4 {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1c4oaF4sb2hyPXuUaq4daxWRz65ax0qHe5g&usqp=CAU");
+    background-image: url("https://media.istockphoto.com/id/1398577959/fr/photo/une-femme-encadre-un-jeune-employ%C3%A9-au-bureau.webp?b=1&s=170667a&w=0&k=20&c=7WXIk_MCjxQzZlEq1mgkCB9Hy3KlvKuGJg0p6j71718=");
     height: 45%;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage5 {
-    background-image: url("https://blog.orsys.fr/les-carnets/wp-content/uploads/2021/06/Technologies_web-scaled-e1622616972782-1024x576.jpg");
+    background-image: url("https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNvYWNoJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
     height: 45%;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage6 {
-    background-image: url("https://www.testpreptraining.com/blog/wp-content/uploads/2020/03/Computing.png");
+    background-image: url("https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGNvYWNoJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60");
     height: 45%;
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage7 {
-    background-image: url("https://www.usinenouvelle.com/mediatheque/0/1/0/000283010_896x598_c.jpg");
+    background-image: url("https://media.istockphoto.com/id/1483272796/fr/photo/s%C3%A9minaire-codage-parler.webp?b=1&s=170667a&w=0&k=20&c=UuFhXUeyVs2XCg_Da-ClsuMe0VzmLQT39hZHWo1gxdU=");
     height: 45%;  
     width: 100%;
     background-size: cover;
     background-position: center;
   }
   .cardItem .cardItemImage8 {
-    background-image: url("https://cdn.futura-sciences.com/sources/images/IA-technologie.jpeg");
+    background-image: url("https://media.istockphoto.com/id/1436767563/fr/photo/technicienne-informatique-heureuse-travaillant-au-bureau-%C3%A0-laide-de-son-ordinateur-portable.webp?b=1&s=170667a&w=0&k=20&c=aGzE3O3mXOtnzZO1C9gq33wFbsnxsMqeEhONfJG2n_w=");
     height: 45%;
     width: 100%;
     background-size: cover;
@@ -389,6 +389,7 @@ section.Collab{
 }
 
 .cardItemBtn {
+    margin-top: 30px;
     height: 10%;
     width: 100%;
     display: flex;
