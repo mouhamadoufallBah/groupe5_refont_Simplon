@@ -3,6 +3,7 @@
   --grey: #eeeeee;
   --white: #ffffff;
   --black: #000;
+  --bs-nav-pills-link-active-bg: red;
 }
 
 * {
@@ -11,6 +12,15 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+}
+
+.nav-link{
+  color: var(--pink);
+}
+
+button.nav-link.active{
+  background-color: var(--pink) !important;
+  color: white;
 }
 
 body {
