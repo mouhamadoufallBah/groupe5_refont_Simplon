@@ -466,6 +466,7 @@ footer
   height: 20%;
   display: flex;
   gap: 3%;
+  /* border: 2px solid red; */
 }
 
 footer
@@ -494,7 +495,7 @@ footer
   height: 100%;
   width: 60%;
   display: flex;
-  /* border: 2px solid; */
+  border: 2px solid white;
   align-items: center;
   font-size: 20px;
   color: var(--white);
@@ -509,6 +510,7 @@ footer
   input {
   border: none;
   width: 100%;
+  height: 100%;
   padding-left: 1%;
 }
 
@@ -596,6 +598,7 @@ footer .footerTop .footerTopItems .footerTopItem2 .footerTopItem2Info ul li {
 footer .footerTop .footerTopItems .footerTopItem2 .footerTopItem2Info ul li a {
   font-size: 20px;
   color: var(--white);
+  text-decoration: none;
 }
 
 footer
@@ -631,7 +634,7 @@ footer .footerBottom {
 /* **************************mediaQueries header*********************** */
 @media Screen and (max-width: 767px) {
   header {
-    height: 10vh;
+    height: 20vh;
     width: 100%;
     /* border: 2px solid red; */
   }
@@ -784,39 +787,50 @@ footer .footerBottom {
     display: none;
   }
 
-  footer {
-    height: 100vh;
+  .banner{
+    font-size: 0.9em;
   }
 
-  footer .footerTop {
-    border: 2px solid wheat;
+  footer{
+    height: 120vh;
+}
+
+footer .footerTop{
+    /* border: 2px solid; */
     width: 80%;
     height: 90%;
-    margin: 0 auto;
+    margin: 3% auto !important;
     display: flex;
-  }
+}
 
-  footer .footerTop .footerTopItems {
+footer .footerTop .footerTopItems{
     display: flex;
     flex-direction: column;
-    gap: 10%;
-  }
+}
 
-  footer .footerTop .footerTopItems .footerTopItem1 {
-    border: 1px solid white;
-    width: 80%;
-    height: 10%;
-  }
-
-  .footerTopItem1Info {
-    border: 1px solid rgb(194, 48, 48);
-    height: 100%;
-    width: 100%;
-  }
-
-  footer .footerTop .footerTopItems .footerTopItem2 {
+footer .footerTop .footerTopItems .footerTopItem1{
     /* border: 1px solid; */
     width: 100%;
     height: 100%;
-  }
+}
+
+footer .footerTop .footerTopItems .footerTopItem2{
+    /* border: 1px solid; */
+    width: 100%;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+footer
+  .footerTop
+  .footerTopItems
+  .footerTopItem1
+  .footerTopItem1Info
+  .footerTopItem1Infoitem {
+  height: 90%;
+  display: flex;
+  /* border: 2px solid red; */
+  margin-top: 3%;
+}
+
 }
