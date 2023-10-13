@@ -378,7 +378,7 @@ section.formation h1 {
 .cardItems {
   /* border: 2px solid red; */
   height: 95%;
-  width: 98%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
