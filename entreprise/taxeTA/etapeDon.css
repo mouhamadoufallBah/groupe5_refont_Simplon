@@ -1,0 +1,64 @@
+:root {
+    --pink: #ce0033;
+    --grey: #eeeeee;
+    --white: #ffffff;
+    --black: #000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--grey);
+}
+.etapeDona{
+    width: 98%;
+    text-align: center;
+    padding-top: 5vh;
+    justify-content: center;
+    gap: 10vh;
+}
+.row{
+    width: 90%;
+    /* align-items: center; */
+   ;
+    /* padding-left: 20vh; */
+}
+.row .col{
+    justify-content: center;
+}
+.row .col .card{
+    /* border: 3px solid ; */
+    height: 55vh;
+    box-shadow: 17px 17px 10px -1px rgba(0,0,0,0.36);
+-webkit-box-shadow: 17px 17px 10px -1px rgba(0,0,0,0.36);
+-moz-box-shadow: 17px 17px 10px -1px rgba(0,0,0,0.36);
+    /* box-shadow: 9px 10px 8px 5px rgba(0, 0, 0, 0.206); */
+}
+.contenuEtape{
+    padding-left:20vh ;
+    padding-bottom: 5vh;
+    align-items: center;
+    /* border: 2px solid var(--black); */
+    /* height: 10vh; */
+    
+}
+.contenuEtape .card .card-body {
+    height: 20vh;
+    /* border: 2px solid var(--black); */
+}
+#decision{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+.btn {
+    
+    background-color:var(--pink) ;
+    border-radius: 20px;
+}
