@@ -15,6 +15,9 @@
 </head>
 
 <body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+      </div>    
     <header>
         <div class="headerContainer">
             <div class="info-container-black">
@@ -49,44 +52,40 @@
                                 class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
                     </div>
                     <div class="rightNavitem">
-                        <ul>
-                            <li><a href="#">Devenir formateur</a></li>
-                            <li><a href="#">Rejoigner nos equipes</a></li>
-                        </ul>
                     </div>
                     <button class="menuTogler" id="menuTogler"><i class="bi bi-list test menuToglerIcon"
                             id="menuToglerIcon" style="font-size: 3em; color: rgb(5, 5, 5);"></i></button>
                 </div>
             </div>
 
-            <div class="menu-bg">
+            <div class="menu-bg navBar">
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Acceuil</a></li>
-                        <li><a href="#">A propos</a></li>
-                        <li><a href="#">Entreprise</a>
+                        <li><a href="../acceuil/Accueil.html">Acceuil</a></li>
+                        <li><a href="../A propos/Apropos10.html">A propos</a></li>
+                        <li><a href="../entreprise/detailEntreprise/entreprise1.html">Entreprise</a>
                         </li>
                         <li><a href="#">Nos Formations</a>
                         </li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contactez-nous</a></li>
-                        <li><a href="#">Simplon Recrute</a></li>
+                        <li><a href="../blog/blog1.html">Blog</a></li>
+                        <li><a href="../contact/contact1.html">Contactez-nous</a></li>
+                        <li><a href="../recrutementSimplon/simplonR2.html">Simplon Recrute</a></li>
                     </ul>
 
 
                     <div class="dropDownMenu" id="dropdownMenu">
                         <ul>
-                            <li><a href="#">Acceuil</a></li>
-                            <li><a href="#">A propos</a></li>
-                            <li><a href="#">Entreprise</a>
+                            <li><a href="../acceuil/Accueil.html">Acceuil</a></li>
+                            <li><a href="../A propos/Apropos10.html">A propos</a></li>
+                            <li><a href="../entreprise/detailEntreprise/entreprise1.html">Entreprise</a>
                             </li>
                             <li><a href="#">Nos Formations</a>
                             </li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contactez-nous</a></li>
-                            <li><a href="#">Simplon Recrute</a></li>
-                            <li><a href="#">Devenir formateur</a></li>
-                            <li><a href="#">Rejoigner nos equipes</a></li>
+                            <li><a href="../blog/blog1.html">Blog</a></li>
+                            <li><a href="../contact/contact1.html">Contactez-nous</a></li>
+                            <li><a href="../recrutementSimplon/simplonR2.html">Simplon Recrute</a></li>
+                            <li><a href="../recrutementSimplon/simplonR2.html">Devenir formateur</a></li>
+                            <li><a href="../recrutementSimplon/simplonR2.html">Rejoigner nos equipes</a></li>
                         </ul>
                     </div>
                 </div>
@@ -96,12 +95,9 @@
     <div class="banner">
         <div class="bannerOpacity">
             <div class="logoBanner">
-                SIMPL<span>O</span>N.CO
+               Formation
             </div>
-            <div class="textBanner">
-                est un réseau d'écoles de formation aux métiers du numérique basé en France et
-                implanté dans quelques pays africain qui forme chaque année différents talents aux métiers du numérique.
-            </div>
+            
         </div>
 
     </div>
@@ -8375,19 +8371,76 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script>
-        //menu
-        let menuTogler = document.querySelector('.menuTogler');
-        let menuToglerIcon = document.querySelector('.menuTogler i');
-        let dropDownMenu = document.querySelector('.dropDownMenu');
+        <script>
 
-        menuTogler.onclick = function () {
-            dropDownMenu.classList.toggle('open');
-            let isOpen = dropDownMenu.classList.contains('open');
-
-            menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
-        }
-    </script>
+            //navBar fixed
+            let navBarFixed = () => {
+                    let navBar = document.querySelector(".navBar");
+                    console.log(navBar);
+            
+                    let pos = document.documentElement.scrollTop;
+                    
+            
+                    if (pos > 10) {
+                      navBar.classList.add("fixed");
+                      document.querySelector('.menu-bg').style.height = '10%';
+                      console.log("fixed");
+                    } else {
+                      navBar.classList.remove("fixed");
+                      console.log("not-fixed");
+                      document.querySelector('.menu-bg').style.height = '40%';
+                    }
+                  };
+            
+                  // window.onscroll = navBarFixed;
+                  // window.onload = navBarFixed;
+            
+                  // scroll
+                  let calcScrollValue = () =>{
+                    let scrollProgress = document.getElementById('progress');
+                    let scrolProgressValue = document.getElementById('progressValue');
+            
+                    let pos = document.documentElement.scrollTop;
+                    let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    let scrollValue = Math.round((pos * 100)/calcHeight)
+                    if(pos>10){
+                      scrollProgress.style.display = 'grid';
+                    }else{
+                      scrollProgress.style.display = 'none';
+                    }
+            
+                    scrollProgress.addEventListener('click', () => {
+                      document.documentElement.scrollTop = 0;
+                    })
+            
+                    scrollProgress.style.background = `conic-gradient( #ce0033 ${scrollValue}%, white ${scrollValue}%)`;
+                  }
+            
+                  // Ajouter un seul gestionnaire d'événements
+                  window.addEventListener('scroll', () => {
+                    navBarFixed();
+                    calcScrollValue();
+                  });
+            
+                  // Exécutez les fonctions une fois au chargement de la page
+                  window.addEventListener('load', () => {
+                    navBarFixed();
+                    calcScrollValue();
+                  });
+    
+           
+           //menu
+      let menuTogler = document.querySelector('.menuTogler');
+      let menuToglerIcon = document.querySelector('.menuTogler i');
+      let dropDownMenu = document.querySelector('.dropDownMenu');
+    
+      menuTogler.onclick = function(){
+        dropDownMenu.classList.toggle('open');
+        let isOpen = dropDownMenu.classList.contains('open');
+    
+        menuToglerIcon.classList = isOpen ? 'bi bi-x ' : 'bi bi-list ';
+      }
+        </script>
 </body>
 
 </html>

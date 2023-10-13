@@ -1,0 +1,41 @@
+:root {
+    --pink: #ce0033;
+    --grey: #eeeeee;
+    --white: #ffffff;
+    --black: #000;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none !important;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+  }
+  .contenuReskilling{
+    text-align: center;
+    padding-bottom: 5vh;
+  }
+  .blocButton{
+    gap: 9vh;
+    padding: 5vh;
+  }
+  
+  .reskButton{
+    background-color: var(--pink);
+    gap: 9vh;
+    width: 20%;
+    height: 5vh;
+    border-radius: 20px;
+  }
+  .contenuSkill{
+    /* display: grid;
+    grid-template-columns: 40% 60%; */
+  }
+  .contenu2Resk .card-text{
+    float: left;
+  }
