@@ -13,6 +13,9 @@
         
     </head>
 <body>
+    <div id="progress">
+        <span id="progressValue">&#x1F815</span>
+    </div>
     <header>
         <div class="headerContainer">
             <div class="info-container-black">
@@ -152,7 +155,7 @@
                 <div class="footerTopItem1First">
                     <div class="footerTopItem1FirstContainer">
                         <div class="logoImageFooter">
-                            <img src="./AcceuilImage/logoWhite.png" alt="">
+                            <a href="/acceuil/Accueil.html"><img src="/acceuil/AcceuilImage/logoWhite.png" alt=""></a>
                         </div>
                         <div class="footerTopItem1FirstIcone">
                             <i class="bi bi-facebook"></i>
@@ -223,7 +226,7 @@
     
     
     <script>
-    
+        
         //navBar fixed
         let navBarFixed = () => {
                 let navBar = document.querySelector(".navBar");
@@ -234,10 +237,11 @@
         
                 if (pos > 10) {
                   navBar.classList.add("fixed");
-                  document.querySelector('.menu-bg').style.height = '40%';
+                  document.querySelector('.menu-bg').style.height = '10%';
                   console.log("fixed");
                 } else {
                   navBar.classList.remove("fixed");
+                  document.querySelector('.menu-bg').style.height = '40%';
                   console.log("not-fixed");
                 }
               };
