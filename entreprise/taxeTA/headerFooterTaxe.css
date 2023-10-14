@@ -246,7 +246,7 @@
   .banner {
     border: 1px solid;
     height: 60vh;
-    background-image: url("/groupe5_refont_Simplon/entreprise/entreprisePict/image1.jpg");
+    background-image: url("/entreprise/entreprisePict/image1.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
