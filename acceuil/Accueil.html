@@ -422,10 +422,17 @@
                     <h1 class="footerTopItem1Title">EMAILS NEWSLATTER <span></span></h1>
                     <div class="footerTopItem1Info">
                         <div class="footerTopItem1Infoitem">
-                            <input type="email" name="" id="" placeholder="Emails Address...">
+                            <input type="email" name="" id="" placeholder="Emails Address..." required>
                         </div>
                         <div class="footerTopItem1Infoitem">
-                            <button>SUBSCRIBE</button>
+                            <button type="button"  onclick="validateEmail()">SUBSCRIBE</button>
+                        </div>
+                        
+                    </div>
+                    <div class="modal" id="errorModal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <p>Veuillez entrer une adresse e-mail valide.</p>
                         </div>
                     </div>
                 </div>
@@ -440,9 +447,37 @@
 
     </footer>
 
-
+    
 
     <script>
+
+function validateEmail() {
+    console.log('Function called'); // Ajout d'un log pour déboguer
+    var email = document.querySelector('input[type="email"]').value;
+    var modal = document.getElementById('errorModal');
+
+    if (!isValidEmail(email)) {
+        modal.style.display = 'block';
+    } else {
+        modal.style.display = 'none';
+        // Code pour traiter l'adresse e-mail valide ici
+    }
+}
+
+function isValidEmail(email) {
+    // Vérifiez ici si l'adresse e-mail est valide
+    // C'est un exemple très basique, vous pouvez utiliser une expression régulière pour une validation plus précise
+    return /\S+@\S+\.\S+/.test(email);
+}
+
+function closeModal() {
+    var modal = document.getElementById('errorModal');
+    modal.style.display = 'none';
+}
+
+
+
+
 
         //navBar fixed
         let navBarFixed = () => {
