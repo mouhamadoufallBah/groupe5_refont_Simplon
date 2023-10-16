@@ -24,23 +24,20 @@
     text-align: center;
 }
 .etapeDona{
-    display: grid;
     width: 98%;
-    /* text-align: center; */
+    text-align: center;
     padding-top: 5vh;
-    /* align-items: center; */
+    align-items: center;
     /* text-align: center; */
-    justify-content: flex-end;
-    gap: 15vh;
-    padding-left: 40vh;
+    gap: 10vh;
 }
 .row{
     width: 100%;
     /* align-items: center; */
-    /* align-items: center !important; */
+    align-items: center !important;
     justify-content: space-around;
-    /* border: 2px soli */
-   /* gap: 1vh; */
+    /* border: 2px solid */
+   ;
     /* padding-left: 20vh; */
 }
 .row .col{
@@ -49,9 +46,7 @@
 }
 .row .col .card{
     /* border: 3px solid ; */
-    height: 65vh;
-    gap: 5vh;
-    width: 110%;
+    height: 55vh;
     box-shadow: 17px 17px 10px -1px rgba(0,0,0,0.36);
 -webkit-box-shadow: 17px 17px 10px -1px rgba(0,0,0,0.36);
 -moz-box-shadow: 17px 17px 10px -1px rgba(0,0,0,0.36);

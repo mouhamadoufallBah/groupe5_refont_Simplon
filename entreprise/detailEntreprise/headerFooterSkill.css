@@ -161,6 +161,9 @@ header {
   align-items: center;
   /* justify-content: center; */
 }
+#boutonActive{
+  background-color: var(--pink);
+}
 
 .navMiddleContainer .rightNavitem ul {
   display: flex;
