@@ -14,14 +14,43 @@
   text-decoration: none;
 }
 
-.nav-link{
+.mainTabs .maintabsLink .nav-link{
   color: var(--pink);
 }
 
-button.nav-link.active{
+.mainTabs .maintabsLink button.nav-link.active{
   background-color: var(--pink) !important;
   color: white;
 }
+
+nav .filterTabs .nav-link{
+  color: var(--pink);
+}
+
+ul.filterTabs .nav-link{
+  color: var(--pink);
+}
+
+nav .filterTabs button.nav-link.active{
+  background-color: var(--pink) !important;
+  color: white;
+}
+
+ul.filterTabs button.nav-link.active{
+  background-color: var(--pink) !important;
+  color: white;
+}
+
+ul.paginationColor .page-link{
+  color: var(--pink);
+}
+
+ul.paginationColor .page-link.active{
+  color: var(--white);
+  background-color: var(--pink);
+  border: none;
+}
+
 
 body {
   font-family: "Roboto", sans-serif;
@@ -345,7 +374,7 @@ main{
 
 .mainTabs{
   display: grid;
-  grid-template-columns: 25% 70%;
+  grid-template-columns: 20% 75%;
   gap: 3%;
 }
 
