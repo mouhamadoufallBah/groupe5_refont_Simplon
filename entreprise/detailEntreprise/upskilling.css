@@ -24,7 +24,10 @@
     gap: 9vh;
     padding: 5vh;
   }
-
+  .img-fluid{
+    height: 100%;
+    padding-right: 7.5vh;
+  }
   .reskButtonUps{
     background-color: var(--pink);
     gap: 9vh;
@@ -35,7 +38,7 @@
 
   .btn-danger  {
     background-color: var(--grey) ;
-    border: 2px solid;
+    /* border: 2px solid; */
     /* gap: 9vh;
     width: 20%;
     height: 5vh;
@@ -46,4 +49,8 @@
   font-weight: 900;
   /* border: 2px solid; */
 
+}
+.blockcard{
+  padding-bottom: 5vh;
+  padding-left: 20vh;
 }
