@@ -39,7 +39,12 @@
   .contenu2Resk .card-text{
     float: left;
   }
-  
+  .contenu2Resk{
+    padding-left: 25vh;
+  }
+  .img-fluid{
+    height: 100%;
+  }
   .btn-danger  {
     background-color: var(--grey) ;
     border: 2px solid;
