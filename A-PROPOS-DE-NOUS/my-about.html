@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="about.css">
+
+    <title>about</title>
+    <style>
+        header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            z-index: 99;
+            box-shadow: 0 0 10px #000;
+            background: rgb(0, 0, 0);
+        }
+
+        #chk1 {
+            display: none;
+
+
+        }
+
+        i {
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        header .logo {
+            flex: 1;
+            color: #ffffff;
+            margin-left: 50px;
+            text-transform: uppercase;
+            font-size: 15px;
+
+        }
+
+
+        header ul {
+            flex: 2;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        header ul li {
+            list-style: none;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: 10px 15px;
+        }
+
+        header ul li a:hover {
+            border-bottom: 2px solid cadetblue;
+        }
+
+        header .menu {
+            font-size: 2.5em;
+            display: none;
+        }
+
+        @media(max-width:1000px) {
+            .search-box button {
+                position: absolute;
+            }
+
+            header ul {
+                position: fixed;
+                top: 100px;
+                right: -100%;
+                background-color: #000;
+                height: calc(100vh - 100px);
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                transition: right 0.5s linear;
+            }
+
+            header .menu {
+                display: block;
+                width: 100px;
+                text-align: center;
+            }
+
+            #chk1:checked~ul {
+                right: 0;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" name="" id="chk1">
+        <div class="logo">
+            <h1><span class="gras">SIMPL<span class="rouge">O</span>N.co</span></h1>
+        </div>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">A propos</a></li>
+            <li><a href="#">Nos formations</a></li>
+            <li><a href="#">Contact</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" style="color: rgb(255, 255, 255);" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Entreprise
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" style="color: black;" href="upskilling.html">Former ses salariés</a>
+                    </li>
+                    <li><a class="dropdown-item" style="color: black;" href="/entreprise/taxeTA/taxeTa.html">Collecte de
+                            la TA
+                            2023</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+
+            </li>
+        </ul>
+        <div class="menu">
+            <label for="chk1">
+                <i class="fa fa-bars"></i>
+            </label>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="bannerOpacity">
+            <div class="logoBanner">
+                SIMPL<span>O</span>N.CO
+            </div>
+            <div class="textBanner">
+                A propos de nous
+            </div>
+        </div>
+
+    </div>
+    <section class="first-section">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Qui sommes-nous</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Notre
+                    pédagogie</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Nos Fabriques</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-lnc-tab" data-bs-toggle="pill" data-bs-target="#pills-lnc"
+                    type="button" role="tab" aria-controls="pills-lnc" aria-selected="false">Nos actions</button>
+            </li>
+
+        </ul>
+
+        <!-- -------------------------------------------fin premier barre de triage -------------------------------->
+
+        <div class="tab-content" id="pills-tabContent">
+
+            <!------------------------------------------- qui sommes nous-------------------------------------------------- -->
+
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <section class="identitee-one">
+                    <div class="two-cards">
+                        <div class="part1">
+                            <p><span class="gras">SIMPL<span class="gras-rouge">O</span>N</span>, entreprise sociale et
+                                solidaire, Simplon.co utilise le numérique comme levier d'inclusion en
+                                révélant des
+                                talents
+                                différents et accompagne la transformation numérique des organisations. Nous sommes
+                                aussi un
+                                réseau de
+                                fabriques numériques et inclusives en France et à l'étranger. Nous avons formé plus
+                                de 25 000
+                                Simploniens et Simploniennes depuis 2013, dont 40% de femmes et 44% de personnes peu ou
+                                pas
+                                diplômées.
+                                Nous
+                                sommes une
+                                entreprise sociale et solidaire qui entend faire du numérique un véritable levier
+                                d'inclusion pour révéler
+                                des talents
+                                différents peu représentés dans le digital et les métiers techniques du numérique. Nous
+                                accompagnons les
+                                organisations
+                                pour que leur transformation digitale reste inclusive.
+                                De manière indirecte, nous agissons également dans le domaine de la médiation numérique
+                                et de
+                                l'apprentissage du
+                                numérique créatif auprès des enfants. nous avons aussi Simplon africa, Créé en 2018
+                                Simplon
+                                Africa est une
+                                entité du groupe Simplon.co, une entreprise sociale qui propose des formations aux
+                                métiers en tension du numérique destinés prioritairement aux publics éloignés de
+                                l'emploi
+                                (jeunes,
+                                enfants, demandeurs).</p>
+                        </div>
+                        <div class="part2" id="part2">
+                            <img src="font1.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <!-------------------------------------------section 2 deuxieme trie----------------------------------------------  -->
+                <section class="identitee-two">
+                    <div class="titre">
+                        <h1>Notre histoire</h1>
+                    </div>
+
+                    <!-- ----------------animation underline------------------ -->
+
+                    <div class="loader"></div>
+
+                    <!------------------fin animation underline------------------ -->
+
+                    <div class="tabs" id="lnc3">
+                        <div class="tab-header">
+                            <div class="active">
+                                2013
+                            </div>
+                            <div>
+                                2015
+                            </div>
+                            <div>
+                                2017
+                            </div>
+                            <div>
+                                2019
+                            </div>
+                            <div>
+                                2020
+                            </div>
+                        </div>
+                        <div class="tab-indicator"></div>
+                        <div class="tab-body">
+                            <div class="active">
+                                <h2><i class="bi bi-graph-up-arrow" style="color: #ce0033;"></i></h2>
+                                <p>
+                                    L'aventure de Simplon débute en 2013 avec Frédéric Bardeau, Andrei Vladescu-Olt et
+                                    Erwan Kezzar. Inspirés par les
+                                    premiers bootcamps qui fleurissent un peu partout dans la Silicon Valley, ils rêvent
+                                    d'une version française plus
+                                    inclusive et gratuite avec plus de femmes, et plus de recrues de milieux et de
+                                    territoires différents. Le local de
+                                    Montreuil est trouvé, loué et rapidement rafraîchi pour accueillir en octobre la
+                                    première promotion de Simplon sur Ruby <br> On Rails : 30 personnes ayant un projet
+                                    d'application ou d'entreprise dont 50% de
+                                    femmes de 18 à 52 ans, de Bac-15 à
+                                    Bac+15 et des personnes provenant de 17 nationalités différentes. Autrement dit,
+                                    c'est une fabrique accélérée de développeurs d'applications web/mobile et
+                                    d'entrepreneurs digitaux.
+
+                                </p>
+                            </div>
+                            <div>
+                                <h2><i class="bi bi-share" style="color: #ce0033;"></i></h2>
+                                <p>
+                                    Simplon se développe rapidement en dehors de Montreuil via un mécanisme de
+                                    "franchise sociale" et des fabriques
+                                    commencent à pousser dans les quartiers prioritaires et ruraux de France et à
+                                    l'étranger (Roumanie, Afrique du Sud). Une
+                                    première levée de fonds consolide le modèle et Simplon est autorisé à délivrer le
+                                    Certificat de Qualification
+                                    Professionnelle (CQP) « Développeur nouvelles technologies ». À la même époque,
+                                    Simplon développe ses activités avec la
+                                    création de Simplon Prod, l’atelier solidaire de fabrication digitale, à destination
+                                    des acteurs de l’ESS, et la
+                                    Fondation Simplon, sa branche philanthropique abritée par Face reconnue d'utilité
+                                    publique nait. Simplon est lauréat de
+                                    la France s'Engage en 2014, fellow Ashoka et sélectionnée par EPIC en 2015.
+                                </p>
+                            </div>
+                            <div>
+                                <h2><i class="bi bi-patch-check-fill" style="color: #ce0033;"></i></h2>
+                                <p>
+                                    Simplon devient le premier réseau de formation labellisées par l'Etat en France
+                                    "Grande Ecole du Numérique" et se
+                                    développe à l’international : la Belgique, le Liban, la Côte d’Ivoire. Simplon voit
+                                    grand et organise une seconde levée
+                                    de fonds. France Active (via France Active Investissement), la Caisse des Dépôts et
+                                    Consignations (CDC en direct),
+                                    Phitrust, INCO (Comptoir de l’innovation), Aviva, Crédit Coopératif (via ESFIN),
+                                    Amundi et Mirova entrent au capital de
+                                    Simplon. Simplon prend un nouvel élan et double ses effectifs tous les ans, et son
+                                    impact. Simplon Corp, sa division
+                                    spécialisée dans la formation des salariés dont les métiers et les compétences sont
+                                    fortement impactées par la
+                                    transformation numérique, déploie ses projets dans les grands comptes. DigitESS nait
+                                    à ce moment là pour accompagner la
+                                    transition numérique des acteurs à impact positif.
+                                </p>
+                            </div>
+                            <div>
+                                <h2><i class="bi bi-ubuntu" style="color: #ce0033;"></i></h2>
+                                <p>
+                                    Au moment de fêter ses 6 ans, Simplon.co lève 12 millions d’euros auprès de son pool
+                                    d’investisseurs de l’Économie
+                                    sociale et solidaire (ESS) afin de poursuivre la croissance de son impact social en
+                                    France et à l’international. Ces
+                                    deux dernières années, porté par le maintien d’un niveau très élevé des besoins en
+                                    compétences dans le domaine du
+                                    numérique, Simplon.co a multiplié par quatre son impact social et formé aux métiers
+                                    du numérique plus de 5 600 personnes
+                                    dans le monde avec un taux de sorties positives de 75% (6 mois après la formation).
+                                    Le développement à l’international
+                                    se poursuit. En 2019, Simplon.co compte 78 Fabriques dont 24 à l’étranger. Simplon
+                                    Prod dépasse les 150 projets ESS
+                                    réalisés et Simplon Corp le millier de salariés formés.
+                                </p>
+                            </div>
+                            <div>
+                                <h2><i class="bi bi-globe-americas" style="color: #ce0033;"></i></h2>
+                                <p>
+                                    En 2020, Simplon poursuit le développement de son impact social dans un contexte de
+                                    crise sanitaire inédit. Durant le
+                                    confinement, les formations passent à distance, ce qui oblige à en repenser les
+                                    modalités tout en maintenant une
+                                    approche pédagogique active et inclusive, et un univers bienveillant pour minimiser
+                                    les impacts de cette crise sur les
+                                    activités de Simplon. Malgré un contexte difficile, Simplon dépasse en octobre 2020
+                                    la barre des 10 000 apprenants
+                                    formés dans le monde, et fête ses 7 ans et demi entouré de ses partenaires et amis
+                                    en décembre.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        let tabHeader = document.getElementsByClassName("tab-header")[0];
+                        let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+                        let tabBody = document.getElementsByClassName("tab-body")[0];
+
+                        let tabsPane = tabHeader.getElementsByTagName("div");
+
+                        for (let i = 0; i < tabsPane.length; i++) {
+                            tabsPane[i].addEventListener("click", function () {
+                                tabHeader.getElementsByClassName("active")[0].classList.remove("active");
+                                tabsPane[i].classList.add("active");
+                                tabBody.getElementsByClassName("active")[0].classList.remove("active");
+                                tabBody.getElementsByTagName("div")[i].classList.add("active");
+
+                                tabIndicator.style.left = `calc(calc(100% / 5) * ${i})`;
+                            });
+                        }
+                    </script>
+                    <section class="engagement">
+                        <h2>
+                            Nos engagements
+                        </h2>
+                        <div class="loader"></div>
+                        <div id="mes-cartes">
+                            <div class="c1">
+                                <img src="font4.png" alt="">
+                                <p class="white">
+                                    Simplon.co soutient les associations, les porteurs de projets solidaires ou les ONG
+                                    à se développer et à se digitaliser.
+                                </p>
+                            </div>
+                            <div class="c2">
+                                <img src="font2.png" alt="">
+                                <p class="white">
+                                    Nous sommes aussi sociétaires de Sociétés Coopératives d’Intérêt Collectif (SCIC)
+                                    porteuses de projets solidaires comme
+                                    le label Emmaüs
+                                </p>
+                            </div>
+                            <div class="c3">
+                                <img src="font3.png" alt="">
+                                <p class="white">
+                                    Ashoka dont Simplon est membre depuis 2015, La France s’engage (lauréat 2014), le
+                                    Mouves et France Eco Sociale Tech
+                                    (FEST).
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+
+            </div>
+
+            <!-- ----------------------------------------fin qui sommes-nous------------------------------------------------- -->
+
+            <!-- -----------------------------------------debut notre pedagogie------------------------------------------------- -->
+
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                <div class="pedagogie">
+
+                    <div class="ped1">
+                        <iframe width="560" height="330"
+                            src="https://www.youtube.com/embed/0PeqnLq12V8?si=zVJKv4o58hZGhR_i"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+
+                    </div>
+
+                    <div class="ped2">
+                        <p class="ped-txt">
+                            <span class="gras">SIMPL<span class="rouge">O</span>N</span> se développe rapidement en
+                            dehors de Montreuil via un mécanisme de "franchise
+                            sociale" et des fabriques
+                            commencent à pousser dans les quartiers prioritaires et ruraux de France et à l'étranger
+                            (Roumanie, Afrique du Sud). Une
+                            première levée de fonds consolide le modèle et Simplon est autorisé à délivrer le
+                            Certificat de Qualification
+                            Professionnelle (CQP) « Développeur nouvelles technologies ». À la même époque, Simplon
+                            développe ses activités avec la
+                            création de Simplon Prod, l’atelier solidaire de fabrication digitale, à destination des
+                            acteurs de l’ESS, et la
+                            Fondation Simplon, sa branche philanthropique abritée par Face reconnue d'utilité
+                            publique nait. Simplon est lauréat de
+                            la France s'Engage en 2014, fellow Ashoka et sélectionnée par EPIC en 2015.
+                            Simplon se développe rapidement en dehors de Montreuil via un mécanisme de "franchise
+                            sociale" et des fabriques
+                            commencent à pousser dans les quartiers prioritaires et ruraux de France et à l'étranger
+                            (Roumanie, Afrique du Sud). Une
+                            première levée de fonds consolide le modèle et Simplon est autorisé à délivrer le
+                            Certificat de Qualification
+                            Professionnelle (CQP) « Développeur nouvelles technologies ».
+                        </p>
+                    </div>
+                </div>
+                <div class="six-pliers">
+                    <div>
+                        <h2>
+                            Les 6 piliers de la pédagogie Simplon
+                        </h2>
+                        <div class="loader"></div>
+                    </div>
+
+                    <div class="pliers">
+                        <img src="6pliers.png" alt="">
+                    </div>
+
+
+
+                    <!-- ---------------------------------------- -->
+
+                    <div class="formateur-cartes">
+                        <div class="formateur1">
+                            <div class="form-img">
+                                <img src="formateur1.jpeg" alt="">
+                            </div>
+                            <h3>Des formateurs et formatrices experts technique</h3>
+                            <p>En cohérence avec ces principes, nous faisons le choix au quotidien de travailler avec
+                                des professionnels du numérique
+                                que nous formons à devenir formateurs et formatrices en pédagogie active.</p>
+                        </div>
+                        <div class="formateur2">
+                            <div class="form-img">
+                                <img src="formateur2.jpeg" alt="">
+                            </div>
+
+                            <h3>Des formateurs et formatrices experts technique</h3>
+                            <p>Afin d'aider nos formatrices et formateurs à effectuer le suivi fin et objectivé de la
+                                montée en compétences de leurs
+                                apprenants, nous avons développé notre propre plateforme : Simplonline développé avec le
+                                soutien de l'OPCO Atla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------fin notre pedagogie------------------------------------------------- -->
+
+            <!-- -----------------------------------------debut nos fabriques------------------------------------------------- -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                <p class="fabrik">
+                    Réseau de Fabriques Le Réseau des Fabriques Simplon.co compte en France et à l’international
+                    plus de 100 Fabriques inclusives qui partagent des valeurs, une méthode et le même objectif :
+                    l’insert
+                    ion professionnelle de talents sur des métiers techniques du numérique. L’objectif de Simplon, c’est
+                    de former des professionnels compétents en situation de travail.
+                    Pour cela, nous avons mis au point une méthode de formation en pédagogie active qui permet aux
+                    apprenants et aux
+                    apprenantes de développer au mieux leurs compétences professionnelles.
+                </p>
+
+                <div class="nbr">
+                    <div class="nbr1">
+                        <p>
+                            <span class="gras">
+                                <span class="rouge" id="rouge">
+                                    57
+                                </span>
+                            </span>
+                        </p>
+                        <p>
+                            Fabriques en france
+                        </p>
+                    </div>
+
+                    <div class="nbr2">
+                        <p>
+                            <span class="gras">
+                                <span class="rouge" id="rouge">
+                                    46
+                                </span>
+                            </span>
+                        </p>
+                        <p>fabriques à l'étranger</p>
+                    </div>
+                </div>
+                <!-- mon map -->
+                <div class="local">
+                    <!-- Sélection de la région à afficher sur la carte -->
+                    <label for="region">Choisissez une région : </label>
+                    <select id="region" onchange="changeMap()">
+                        <option value="0,0,2,Monde">Monde</option>
+                        <option value="48.8566,2.3522,6,Europe">Europe (Paris, France)</option>
+                        <option value="40.7128,-74.0060,6,Amérique du Nord">Amérique du Nord (New York, USA)</option>
+                        <option value="34.0522,-118.2437,6,Asie">Asie (Los Angeles, USA)</option>
+                    </select>
+
+                    <!-- Conteneur pour la carte Leaflet -->
+                    <div id="map"></div>
+
+                    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                    <script>
+                        // Création de la carte Leaflet
+                        var map = L.map('map').setView([0, 0], 2);
+
+                        // Ajout de la couche de tuiles OpenStreetMap à la carte
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                        }).addTo(map);
+
+                        // Groupe de calques pour les marqueurs
+                        var markers = L.layerGroup().addTo(map);
+
+                        // Données des marqueurs pour chaque région
+                        var markersData = {
+                            "Monde": [[0, 0, "Marqueur "], [0, 1, "Marqueur 6"]],
+                            "Europe": [[48.8566, 2.3522, "Paris, France"]],
+                            "Amérique du Nord": [[40.7128, -74.0060, "New York, USA"]],
+                            "Asie": [[34.0522, -118.2437, "Los Angeles, USA"]]
+                        };
+
+                        // Fonction pour changer la carte et afficher les marqueurs
+                        function changeMap() {
+                            var selectedOption = document.getElementById('region').value;
+                            var [lat, lon, zoom, name] = selectedOption.split(',');
+
+                            // Définir la vue de la carte en fonction de la région sélectionnée
+                            map.setView([lat, lon], zoom);
+                            markers.clearLayers();
+
+                            if (markersData[name]) {
+                                // Ajouter les marqueurs correspondants à la carte
+                                markersData[name].forEach(function (markerInfo) {
+                                    var [markerLat, markerLon, markerName] = markerInfo;
+                                    L.marker([markerLat, markerLon]).addTo(markers).bindPopup(markerName).openPopup();
+                                });
+                            }
+                        }
+
+                        // Chargement initial de la carte
+                        changeMap();
+                    </script>
+                </div>
+            </div>
+
+            <!-- -----------------------------------------fin nos fabriques------------------------------------------------- -->
+
+            <!-- -----------------------------------------debut nos actions------------------------------------------------- -->
+            <div class="tab-pane fade" id="pills-lnc" role="tabpanel" aria-labelledby="pills-lnc-tab" tabindex="0">
+                <div class="act">
+                    <h2 class="act">
+                        Nos actions pour
+                        un numérique inclusif
+                    </h2>
+                    <div class="loader"></div>
+                </div>
+                <p class="fabrik">
+                    Au coeur du projet de <span class="gras">SIMPL<span class="rouge">O</span>N</span>.co : le numérique
+                    comme levier d'inclusion, d’insertion et d’emploi, mais également un
+                    catalyseur de mixité, de diversité et d'innovation sociale. Simplon.co met ainsi son énergie au
+                    service de l'inclusion
+                    de publics spécifiques (personnes en situation de handicap, réfugiées, femmes, jeunes non diplômés,
+                    primo-arrivants,
+                    etc.) au sein des formations Simplon tout en favorisant autant que possible la mixité de genre,
+                    d'âge et d'origines
+                    sociale et géographique.
+                    Cette approche très élargie de la diversité est au bénéfice des progressions pédagogiques
+                    individuelles de chacun des
+                    Simploniens et un parti-pris clair au coeur de l'ADN de Simplon. C'est également pour cela que nos
+                    Fabriques sont
+                    implantées dans les territoires ruraux, en Outre-mer et pas seulement dans les quartiers populaires
+                    et les grandes
+                    agglomérations. Par sa mission sociale, Simplon.co oeuvre pour un numérique solidaire, responsable
+                    et plus inclusif au service des
+                    personnes éloignées de l'emploi et des territoires les plus défavorisés
+                </p>
+
+                <div class="foto-action">
+                    <div class="foto1">
+                        <div class="haut">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTInnezFkq8AaxuILTB7vmgD_rVquNWaQEM2cYFwpXrxNHhOI9ZtwD1tOS35vuDVmolrm8&usqp=CAU"
+                                alt="">
+                        </div>
+                        <div class="bas">
+                            <div class="bas1">
+                                <img src="https://simplon.co/uploads/Migrations/Frise%20Welcode.png">
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="foto2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPsdQmX0HM-5AqPwJf6SL2WD-obNRQTaVCYQ&usqp=CAU"
+                            alt="">
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------- -->
+                <div class="simplons">
+                    <h2>Simplon Foundation & Simplon Asso</h2>
+                    <div class="loader"></div>
+                    <div class="simplon">
+                        <div class="simplon1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNX_tk-rNiMcmD_76gzAqsZ2HQQQBiu5GCzw&usqp=CAU"
+                                alt="">
+                        </div>
+                        <div class="simplon2">
+                            <p>"Ce qui permet la R&D dans l’innovation sociale, c’est souvent la philanthropie, qui
+                                finance les pilotes, rend possible ses premiers pas, et accélère la promotion d'un
+                                numérique inclusif. Pour créer toujours plus d’impacts nous avons créé Simplon
+                                Foundation - fonds de dotation à la fois collecteur et redistributeur - en fin 2019, et
+                                Simplon.asso, association opératrice en 2020. Le but est de soutenir nos actions
+                                d’accompagnement social des publics fragiles mais aussi de s’ouvrir plus largement à
+                                tous ceux qui veulent faire avancer la tech responsable et utile aux personnes et à la
+                                planète" Frédéric Bardeau, Président de la Simplon Foundation. Le fonds de dotation
+                                Simplon Foundation et l’association Simplon Asso promeuvent
+                                ensemble un numérique solidaire, inclusif et éco-responsable au service des humains
+                                et de la nature.</p>
+                        </div>
+
+                    </div>
+                    <!-- ----------- -->
+                    <div class="">
+
+                    </div>
+                    <div class="lab">
+
+                        <div class="labs-txt">
+                            <h2>Simplon Lab</h2>
+                            <div class="loader"></div>
+                            <p>Espace de 120 m² dédié à la formation, à l'innovation et à la fabrication digitale. Le
+                                Simplon Lab est une structure de l'école Simplon.co. Avec son offre entreprise il
+                                s'adresse à toutes les structures qui souhaitent accéder à cet espace inspirant. Le
+                                Simplon Lab propose des services adaptés aux besoins et aux enjeux de chaque
+                                entreprise. Ateliers gratuits et un accès libre au fablab. Des parcours jeunesse pour
+                                apprendre en faisant. Formations certifiantes, accompagnement sur mesure,
+                                une offre adaptée aux besoins des publics. Des résidences pour les créateur.trices. Des
+                                offres de fabrication et de services par notre communauté</p>
+                        </div>
+                        <div class="labs-img">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnOvfyQlmMUSuMOp0DP6G8DTDqloMnT8FYiQ&usqp=CAU"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- -----------------------------------------fin nos actions------------------------------------------------- -->
+
+        </div>
+    </section>
+    <footer>
+        <div class="footerTop">
+            <div class="footerTopItems">
+
+                <div class="footerTopItem1First">
+                    <div class="footerTopItem1FirstContainer">
+                        <div class="logoImageFooter">
+                            <img src="./AcceuilImage/logoWhite.png" alt="">
+                        </div>
+                        <div class="footerTopItem1FirstIcone">
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-twitter"></i>
+                            <i class="bi bi-google"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerTopItem2">
+                    <h1 class="footerTopItem2Title">Informations<span></span></h1>
+                    <div class="footerTopItem2Info">
+                        <ul>
+                            <li><a href="/blog/blog1.html"><i class='bx bx-radio-circle-marked'></i>Blog</a></li>
+                            <li><a href="/faq/faq.html"><i class='bx bx-radio-circle-marked'></i>FAQ</a>
+                            </li>
+                            <li><a href="/contact/contact1.html"><i class='bx bx-radio-circle-marked'></i>Contact</a>
+                            </li>
+                            <li><a href="#"><i class='bx bx-radio-circle-marked'></i>Simplon
+                                    fondation</a></li>
+                            <li><a href="#"><i class='bx bx-radio-circle-marked'></i>Accessibilité</a></li>
+                            <li><a href="#"><i class='bx bx-radio-circle-marked'></i>Mentions
+                                    légales</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="footerTopItem2">
+                    <h1 class="footerTopItem2Title">Liens utiles <span></span></h1>
+                    <div class="footerTopItem2Info">
+                        <ul>
+                            <li><a href="/acceuil/Accueil.html"><i class='bx bx-radio-circle-marked'></i>Acceuil</a>
+                            </li>
+                            <li><a href="/A propos/Apropos10.html"><i class='bx bx-radio-circle-marked'></i>A
+                                    Propos</a></li>
+                            <li><a href="/entreprise/detailEntreprise/entreprise1.html"><i
+                                        class='bx bx-radio-circle-marked'></i>Entreprises</a>
+                            </li>
+                            <li><a href="/formationPresentielle/formationPresentielle.html"><i
+                                        class='bx bx-radio-circle-marked'></i>Nos
+                                    formations</a></li>
+                            <li><a href="/contact/contact1.html"><i
+                                        class='bx bx-radio-circle-marked'></i>Contactez-nous</a></li>
+                            <li><a href="/recrutementSimplon/simplonR2.html"><i
+                                        class='bx bx-radio-circle-marked'></i>Simplon recrute</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+
+
+                <div class="footerTopItem1">
+                    <h1 class="footerTopItem1Title">EMAILS NEWSLATTER <span></span></h1>
+                    <div class="footerTopItem1Info">
+                        <div class="footerTopItem1Infoitem">
+                            <input type="email" name="" id="" placeholder="Emails Address...">
+                        </div>
+                        <div class="footerTopItem1Infoitem">
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <div class="copyright">
+                <span>Copyright ©2023, all right reserved</span>
+            </div>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
