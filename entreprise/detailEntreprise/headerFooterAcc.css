@@ -250,7 +250,7 @@
   .banner {
     /* border: 1px solid; */
     height: 60vh;
-    background-image: url("/entreprise/entreprisePict/IMAGE8.jpeg");
+    background-image: url("../entreprisePict/IMAGE8.jpeg");
     background-position: center;
     background-size: cover;
     display: flex;
