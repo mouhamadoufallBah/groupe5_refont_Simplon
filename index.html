@@ -4,15 +4,9 @@
     <title>Redirection vers la page d'accueil</title>
 </head>
 <body>
-     <script>
-         fetch('acceuil/acceuil.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('conteneur').innerHTML = data;
-          })
-          .catch(error => {
-            console.error('Erreur de chargement :', error);
-          });
-     </script>
+    <script>
+        // Redirection vers la page d'accueil dans le dossier "acceuil"
+        window.location.href = './accueil/accueil.html';
+    </script>
 </body>
 </html>
